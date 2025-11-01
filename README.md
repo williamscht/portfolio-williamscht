@@ -1,16 +1,86 @@
-# React + Vite
+# Portfolio — William Schmitt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio développé avec **React + Vite** présentant mes projets de formation et personnels.
 
-Currently, two official plugins are available:
+## 🚀 Aperçu
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ce site met en avant mes projets réalisés dans le cadre de la formation OpenClassrooms, ainsi que mes compétences techniques et mon approche du développement web.
 
-## React Compiler
+🔗 **Démo en ligne** : [https://williamscht-dev-portfolio.netlify.app/]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Objectifs du projet
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Créer une plateforme personnelle pour présenter mes réalisations.
+- Offrir une expérience fluide et responsive grâce à React et Vite.
+- Optimiser les performances et le SEO.
+- Illustrer ma progression et mes compétences de développeur.
+
+---
+
+## ⚙️ Technologies utilisées
+
+- **React 19 + Vite**
+- **React Router DOM**
+- **React Icons**
+- **CSS Modules / Architecture modulaire**
+- **API GitHub** pour la récupération automatique des projets
+- **Responsive Design** et optimisation Lighthouse
+
+---
+
+## 📁 Structure du projet
+src/
+│
+├── components/         # Composants réutilisables (Navbar, Footer, Navigation)
+├── layouts/            # Structure principale du site
+├── pages/              # Pages du portfolio (Booki, Kasa, etc.)
+├── routes/             # Configuration du router
+├── styles/             # CSS modulaire (hero, about, projects, etc.)
+└── assets/             # Images et icônes
+
+---
+
+## 💼 Projets présentés
+
+- **Booki** — Intégration HTML/CSS d'une maquette Figma  
+- **Kasa** — Application React pour la location de logements  
+- **Mon Vieux Grimoire** — API sécurisée Node.js / Express  
+- **Nina Carducci SEO** — Optimisation SEO et accessibilité  
+- **Sophie Bluel** — Application de gestion de portfolio 
+
+---
+
+## 🧩 Fonctionnalités
+
+- Navigation fluide entre les projets
+- Mise en cache locale de l’API GitHub
+- Interface entièrement responsive
+- Optimisation SEO et accessibilité
+- Design moderne et animations douces
+
+---
+
+## 🧪 Installation & Lancement
+
+### 1. Cloner le dépôt
+```bash
+git clone https://github.com/williamscht/portfolio-williamscht.git
+cd portfolio-williamscht
+```
+
+Installer les dépendances
+`npm install`
+
+Lancer le serveur
+`npm run dev`
+
+
+
+
+
+
+## Auteur
+
+Projet réalisé par William Schmitt dans le cadre du parcours Développeur Web - OpenClassrooms.

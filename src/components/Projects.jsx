@@ -28,6 +28,9 @@ export default function Projects() {
     "mon-vieux-grimoire": "/grimoire",
   };
 
+  // Exclure certains dépôts spécifiques
+  const excludedRepos = ["portfolio-williamscht", "menu-maker-by-qwenta"];
+
 
   // Fetch tous les dépôts GitHub publics
   useEffect(() => {
@@ -109,7 +112,10 @@ export default function Projects() {
       <div className="projects-scroller" ref={scrollerRef}>
 
         {/*logique d'image à l’intérieur du .map() */}
-        {repos.map((repo) => {
+
+        {repos
+          .filter((repo) => !excludedRepos.includes(repo.name.toLowerCase()))
+          .map((repo)=> {
           console.log("→ Dépôt détecté :", repo.name);
           console.log("🔗 Lien généré :", projectRoutes[repo.name.toLowerCase()]);
 
