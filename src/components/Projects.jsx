@@ -130,7 +130,10 @@ export default function Projects() {
                   const route = projectRoutes[repo.name.toLowerCase()];
                   if (route) {
                     navigate(route);
-                     window.scrollTo({ top: 0, behavior: "smooth" });
+                    setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 100);
+                    
                   } else {
                     window.open(repo.html_url, "_blank"); // ouvre GitHub si pas de route
                   }

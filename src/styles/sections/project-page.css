@@ -149,7 +149,7 @@
 
 @media (max-width: 360px) {
 .project-image {
-  margin-bottom: 4rem;
+  margin-top: 0.5rem;
   text-align: center;
 }
 }
