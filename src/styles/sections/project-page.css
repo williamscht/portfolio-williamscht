@@ -1,0 +1,147 @@
+
+/* ===============================
+   PAGE PROJET
+=============================== */
+
+.project-page {
+  padding: 10rem 10%;
+  color: #d8cff9;
+  background-color: #0a0a0f;
+  min-height: 100vh;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.project-title {
+  font-size: 3rem;
+  color: #cbbdfc;
+  font-weight: 600;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  color: #b8a9e6;
+  margin-bottom: 2rem;
+}
+
+/* Année / Lien / Services */
+.project-meta > div:not(.mission) {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Mission */
+.project-meta .mission {
+  display: grid;
+  grid-template-columns: 200px 1fr; 
+  align-items: start;
+  width: 100%;
+  border-top: 1px solid rgba(140, 90, 255, 0.15);
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-meta .mission span {
+  grid-column: 1;
+  font-size: 0.9rem;
+  color: #9f8afc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.project-meta .mission p {
+  grid-column: 2;
+  justify-self: end;   /* ✅ colle le texte à droite */
+  text-align: right;   /* ✅ aligne le texte à droite */
+  width: 100%;
+  color: #d8cff9;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project-meta .mission {
+    grid-template-columns: 1fr;
+  }
+
+  .project-meta .mission p {
+    
+    margin-top: 2rem;
+    justify-self: start;
+    text-align: left;
+  }
+}
+
+.project-meta span {
+  font-size: 0.9rem;
+  color: #9f8afc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+    flex-direction: column;
+}
+
+.project-meta p,
+.project-meta a {
+  margin-top: 0.5rem;
+  color: #d8cff9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-meta a:hover {
+  color: #b28cff;
+}
+
+/* Image principale */
+.project-image {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  border: none; 
+  outline: none;
+  background: transparent;
+  box-shadow: 0 0 40px rgba(140, 90, 255, 0.15); 
+}
+
+/* Contenu */
+.project-content {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.section-label {
+  font-size: 0.9rem;
+  color: #a48cff;
+  letter-spacing: 2px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.stack-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stack-list li {
+  margin-bottom: 0.5rem;
+  color: #d8cff9;
+}

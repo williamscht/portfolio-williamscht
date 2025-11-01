@@ -1,0 +1,46 @@
+/* ===============================
+   CONTACT — (MAILTO)
+================================= */
+
+.contact-section {
+  background-color: #0a0a0f;
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 85%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.contact-mail {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  font-size: clamp(2rem, 4vw, 4rem);
+  color: #d8cff9;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: 1px solid rgba(164, 140, 255, 0.1);
+  background: radial-gradient(circle at center, rgba(164, 140, 255, 0.08), rgba(0, 0, 0, 0.9));
+  box-shadow:
+    inset 0 0 8px rgba(164, 140, 255, 0.1),
+    0 0 18px rgba(164, 140, 255, 0.08);
+  transition: all 0.4s ease;
+  text-align: center;
+  display : block;
+}
+
+/* Effet au survol */
+.contact-mail:hover {
+  color: #ffffff;
+  border-color: rgba(164, 140, 255, 0.25);
+  background: radial-gradient(circle at center, rgba(164, 140, 255, 0.12), rgba(0, 0, 0, 0.85));
+  box-shadow:
+    inset 0 0 10px rgba(164, 140, 255, 0.15),
+    0 0 25px rgba(164, 140, 255, 0.12);
+  transform: scale(1.01);
+}

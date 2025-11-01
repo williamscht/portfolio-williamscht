@@ -1,0 +1,126 @@
+/* ===============================
+   NAVIGATION ENTRE PROJETS 
+=============================== */
+
+.project-navigation {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 1000;
+  padding: 0 2rem;
+}
+
+.nav-arrow {
+  pointer-events: auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: #cbbdfc;
+  font-weight: 500;
+  text-decoration: none;
+  background: rgba(25, 20, 40, 0.55);
+  border: 1px solid rgba(160, 100, 255, 0.25);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 20px rgba(160, 100, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.nav-arrow svg {
+  font-size: 1.2rem;
+}
+
+.nav-arrow:hover {
+  background: rgba(140, 90, 255, 0.25);
+  box-shadow: 0 0 25px rgba(160, 100, 255, 0.4);
+  color: #fff;
+}
+
+
+.nav-arrow:hover span {
+  display: inline-block;
+  background: none;
+  position: absolute;
+  white-space: nowrap;
+  color: #cbbdfc;
+  font-size: 0.8rem;
+  transform: translateY(-2.5rem);
+}
+
+
+/* Désactive le texte sur desktop */
+.nav-arrow span {
+  display: none;
+}
+
+/* Responsive : sur mobile, flèches en bas centrées */
+@media (max-width: 768px) {
+  .project-navigation {
+    top: auto;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .nav-arrow {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+
+
+
+
+/* ===============================
+   TECHNO ICONS
+================================= */
+
+.tech-icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.tech-icon {
+  font-size: 3rem;
+  transition: all 0.3s ease;
+  opacity: 0.85;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Couleurs personnalisées */
+.html { color: #e54d26; }
+.css { color: #1572b6; }
+.js { color: #f7df1e; }
+.react { color: #61dafb; }
+.node { color: #68a063; }
+.mongo { color: #4db33d; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tech-icons {
+    justify-content: center;
+  }
+
+  .tech-icon {
+    font-size: 2.2rem;
+  }
+}

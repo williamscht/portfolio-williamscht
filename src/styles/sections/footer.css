@@ -1,0 +1,34 @@
+/* ===============================
+   FOOTER
+================================= */
+
+.footer {
+  background-color: #050507; 
+  color: #ffffff; 
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(164, 140, 255, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
+
+/* Effet fade-in */
+@keyframes fadeInFooter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  animation: fadeInFooter 1s ease forwards;
+}

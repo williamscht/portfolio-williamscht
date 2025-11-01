@@ -1,0 +1,21 @@
+/* ===============================
+   MAIN CSS — Fichier central
+   Import de tous les styles
+================================= */
+
+/* === Base globale === */
+@import "./base.css";
+
+/* === Structure === */
+@import "./layout.css";
+
+/* === Composants réutilisables === */
+@import "./components.css";
+
+/* === Sections === */
+@import "./sections/hero.css";
+@import "./sections/about.css";
+@import "./sections/projects.css";
+@import "./sections/project-page.css";
+@import "./sections/contact.css";
+@import "./sections/footer.css";

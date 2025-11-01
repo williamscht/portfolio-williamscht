@@ -1,0 +1,36 @@
+/* ===========================================
+   GLOBAL
+=========================================== */
+:root{
+  /* même marge à gauche/droite pour toutes les sections */
+  --gutter: clamp(24px, 8vw, 120px);
+  --cards-gap: 2.5rem;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background-color: #0A0A0A;
+  color: #E5E7EB;
+  overflow-x: hidden;
+}
+
+a {
+  color: #C4B5FD;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+a:hover {
+  color: #A78BFA;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 500;
+}
