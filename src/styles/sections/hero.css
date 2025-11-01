@@ -133,4 +133,8 @@
   .hero-buttons {
     justify-content: center; 
   }
+
+  .btn {
+    font-size: 0.65rem;
+  }
 }}

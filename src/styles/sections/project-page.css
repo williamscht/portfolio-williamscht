@@ -145,3 +145,11 @@
   margin-bottom: 0.5rem;
   color: #d8cff9;
 }
+
+
+@media (max-width: 360px) {
+.project-image {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+}
