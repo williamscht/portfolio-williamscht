@@ -64,21 +64,42 @@
 /* Responsive : sur mobile, flèches en bas centrées */
 @media (max-width: 768px) {
   .project-navigation {
+    position: relative;
     top: auto;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
+    bottom: auto;
+    left: 0;
+    transform: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0; 
+    padding: 0 2rem; 
+    width: 100%;
+     gap: 3rem;
+     
   }
 
   .nav-arrow {
-    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: auto; 
     height: 45px;
+    border-radius: 9999px;
+    padding: 0.6rem 1rem;
+  }
+
+  .nav-arrow span {
+    display: inline; 
+    font-size: 0.75rem;
+    color: #cbbdfc;
+  }
+
+  .nav-arrow svg {
+    font-size: 1rem;
   }
 }
-
 
 
 
@@ -115,12 +136,22 @@
 .mongo { color: #4db33d; }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .tech-icons {
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
+    gap: 4.8rem;
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto; 
+    padding: 2rem 0; 
+    max-width: 320px; 
   }
 
   .tech-icon {
-    font-size: 2.2rem;
+    font-size: 2.3rem; 
+    justify-self: center;
   }
 }
