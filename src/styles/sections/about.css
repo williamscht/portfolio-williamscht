@@ -76,11 +76,11 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .about-section {
     flex-direction: column;
     gap: 2rem;
-    padding: 6rem 1.5rem;
+    padding: 4rem clamp(24px, 8vw, 120px);
   }
 
   .about-right {
