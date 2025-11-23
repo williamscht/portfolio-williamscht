@@ -14,24 +14,26 @@ export default function About() {
 
         <div className="about-right">
           <p>
-            Je suis <span>William Schmitt</span>, développeur web junior spécialisé dans la création d’interfaces modernes, performantes et accessibles. 
-            J’aime concevoir des sites clairs et bien structurés, où la technique sert avant tout l’usage.
+            Issu de la <span>communication digitale</span>, j’ai développé des compétences solides en <span>stratégie éditoriale, création de contenus, SEO/SEA et gestion de projet</span>.
           </p>
 
           <p>
-            Issu du domaine créatif, j’ai choisi le développement pour allier design et logique. 
-            La formation <span>OpenClassrooms</span> m’a permis d’acquérir une méthode rigoureuse et une bonne maîtrise des standards du web.
+            Le <span>développement web</span> s’est imposé comme la suite logique de mon parcours : un moyen de transformer mes idées, mes contenus et mes intentions UX en interfaces concrètes, modernes et fonctionnelles. C’est ce qui m’a poussé à élargir mes compétences vers la technique.
           </p>
 
           <p>
-            Je m’attache à produire un code propre, maintenable et optimisé, tout en gardant une attention constante à l’expérience utilisateur. 
-            Curieux et organisé, je cherche toujours à comprendre le “pourquoi” derrière chaque fonctionnalité.
+            La formation <span><a href="https://openclassrooms.com/fr/paths/899-developpeur-web" target="_blank" rel="noopener noreferrer">
+            OpenClassrooms</a></span> m’a permis d’acquérir une méthode rigoureuse et une bonne maîtrise des standards du web. J’ai travaillé sur plusieurs projets concrets en <span>React, JavaScript, Node.js et MongoDB</span>, qui m’ont permis d’acquérir des bases solides et opérationnelles.
           </p>
 
           <p>
-            Mon objectif est de rejoindre une équipe dynamique où je pourrai continuer à progresser, 
-            consolider mes compétences front-end et participer à des projets utiles et bien conçus.
+            Je porte une attention particulière à la <span>lisibilité du code</span>, à l’<span>accessibilité</span>, à la <span>cohérence visuelle</span> et à la <span>performance</span>.
           </p>
+
+          <p>
+            Mon objectif est d’évoluer dans un environnement où communication digitale et développement front-end se complètent, afin de contribuer à des projets concrets, bien construits et centrés sur l’utilisateur.
+            </p>
+            
         </div>
       </div>
 

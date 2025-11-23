@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 10rem var(--gutter) 2rem;
+  padding: 12rem var(--gutter) 2rem;
   color: #E5E7EB;
   font-family: 'Space Grotesk', system-ui, sans-serif;
 }
@@ -71,7 +71,6 @@
   line-height: 1.7;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  max-width: 600px;
 }
 
 .hero-buttons {
@@ -110,13 +109,14 @@
 
 
 
-
 /* responsive */ 
 @media (max-width: 768px) {
+
   .hero {
     justify-content: center;
     text-align: center;
-    padding: 8rem 1.5rem 4rem; 
+    padding: 8rem 1.5rem 4rem;
+  }
 
   .hero-content {
     margin: 0 auto;
@@ -131,10 +131,10 @@
   }
 
   .hero-buttons {
-    justify-content: center; 
+    justify-content: center;
   }
 
   .btn {
     font-size: 0.65rem;
   }
-}}
+}

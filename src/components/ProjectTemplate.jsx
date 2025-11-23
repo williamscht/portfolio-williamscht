@@ -35,7 +35,7 @@ export default function ProjectTemplate({
           </div>
 
           <div>
-            <span>Services</span>
+            <span>Compétences mobilisées</span>
             {Array.isArray(services) && services.length > 0 ? (
               services.map((service, index) => <p key={index}>{service}</p>)
             ) : (

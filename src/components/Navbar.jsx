@@ -10,7 +10,7 @@ export default function Navbar() {
   const handleSetActive = (link) => {
     setActiveLink(link);
 
-    // ✅ Si on est déjà sur la page d'accueil et qu'on clique sur "Accueil"
+    // Si on est déjà sur la page d'accueil et qu'on clique sur "Accueil"
     if (link === "home" && location.pathname === "/") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }

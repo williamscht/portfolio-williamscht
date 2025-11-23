@@ -6,7 +6,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 export default function ProjectNavigation() {
   const location = useLocation();
 
-  // Liste ordonnée de tes projets
+  // Liste ordonnée des projets
   const projects = [
     { path: "/booki", label: "Booki" },
     { path: "/kasa", label: "Kasa" },
