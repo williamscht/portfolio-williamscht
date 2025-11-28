@@ -126,6 +126,8 @@ export default function Projects() {
             <div
                 key={repo.id}
                 className="project-card"
+                tabIndex="0"
+                role="button"
                 onClick={() => {
                   const route = projectRoutes[repo.name.toLowerCase()];
                   if (route) {
@@ -136,6 +138,18 @@ export default function Projects() {
                     
                   } else {
                     window.open(repo.html_url, "_blank"); // ouvre GitHub si pas de route
+                  }
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    const route = projectRoutes[repo.name.toLowerCase()];
+                    if (route) {
+                      navigate(route);
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    } else {
+                      window.open(repo.html_url, "_blank");
+                    }
                   }
                 }}
                 style={{ cursor: "pointer" }}
